@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SAVAGE TACOS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Amatic+SC"
+    />
+    <link rel="stylesheet" href="styles.css" class="css" />
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-hide-small">
+      <div
+        class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off"
+        id="myNavbar"
+      >
+        <a href="#" class="w3-bar-item w3-button">INICIO</a>
+        <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+        <a href="#about" class="w3-bar-item w3-button">Sobre nosotros</a>
+        <a href="#myMap" class="w3-bar-item w3-button">Contáctanos</a>
+      </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+      <div class="w3-display-bottomleft w3-padding">
+        <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+      </div>
+      <div class="w3-display-middle w3-center">
+        <span class="w3-text-black w3-hide-small" style="font-size: 100px"
+          ><br />SAVAGE TACOS</span
+        >
+        <span
+          class="w3-text-white w3-hide-large w3-hide-medium"
+          style="font-size: 60px"
+          ><b><br />TACOS</b></span
+        >
+        <p>
+          <a href="#menu" class="w3-button w3-xxlarge w3-black">Ver menú</a>
+        </p>
+      </div>
+    </header>
+
+    <!-- Menu Container -->
+    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+      <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom: 64px">El MENU</h1>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+          <a
+            href="javascript:void(0)"
+            onclick="openMenu(event, 'Pizza');"
+            id="myLink"
+          >
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-red">
+              Tacos
+            </div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-red">
+              Quesadillas
+            </div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-red">
+              Aguas Mexicanas
+            </div>
+          </a>
+        </div>
+
+        <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+          <h1>
+            <b>Taco al pastor</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$25.000</span>
+          </h1>
+          <p class="w3-text-grey">
+            <div class="imga">
+              <img src="https://i.imgur.com/UbUD01H.jpeg" alt="">
+            </div>
+            <ul>
+              <li>Carne de cerdo marinada en una mezcla de achiote, chile guajillo, comino y ajo.</li>
+              <li>Rodajas de piña fresca.</li>
+              <li>Cilantro fresco picado.</li>
+              <li>Cebolla blanca o morada picada.</li>
+              <li>Salsa taquera o salsa de tu elección.</li>
+              <li>Tortillas de maíz calientes.</li>
+            </ul>
+          </p>
+          <hr />
+
+          <h1>
+            <b>Taco de pollo</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$25.000</span>
+          </h1>
+          <p class="w3-text-grey">
+            <div class="imga">
+              <img src="https://i.imgur.com/G7yZ5YB.jpeg" alt="">
+            </div>
+            <ul>
+              <li>Pollo deshebrado o en trozos, sazonado con comino, ajo, pimentón, y cilantro.</li>
+              <li>Cilantro fresco picado.</li>
+              <li>Cebolla blanca</li>
+              <li>Salsa de tu elección, como salsa verde, salsa roja o salsa de aguacate.</li>
+              <li>Tortillas de maíz caliente.‎ </li>
+            </ul>
+          </p>
+          <hr />
+
+          <h1>
+            <b>Carnitas</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$30.000</span>
+          </h1>
+          <p class="w3-text-grey">
+            <div class="imga">
+              <img src="https://i.imgur.com/H7n92eS.jpeg" alt="">
+            </div>
+            <ul>
+              <li>Carnitas: trozos de carne de cerdo cocidos lentamente en su propia grasa.</li>
+              <li>Cebolla blanca </li>
+              <li>Cilantro fresco picado.</li>
+              <li>Salsa taquera o salsa de tu elección.</li>
+              <li>Tortillas de maíz caliente.‎‎ </li>
+            </ul>
+          </p>
+          <hr />
+
+          <h1>
+            <b>Taco vegetariano</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$23.500</span>
+          </h1>
+          <p class="w3-text-grey">
+            <div class="imga">
+              <img src="https://i.imgur.com/Bz1GDTm.jpeg" alt="">
+            </div>
+            <ul>
+              <li>Frijoles negros, sazonados con comino, ajo y cilantro.</li>
+              <li>Pimientos y cebolla salteada.</li>
+              <li>Guacamole.</li>
+              <li>Cilantro fresco picado.</li>
+              <li>Salsa de tu elección, como salsa verde, salsa roja o salsa de aguacate.</li>
+              <li>Tortillas de maíz caliente.</li>
+            </ul>
+          </p>
+          <hr />
+
+          <h1>
+            <b>Taco de queso</b> 
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$20.000</span>
+          </h1>
+          <p class="w3-text-grey">
+            <div class="imga">
+              <img src="https://i.imgur.com/y6hWPwJ.jpeg" alt="">
+            </div>
+            <ul>
+              <li>Queso Oaxaca derretido</li>
+              <li>Rajas de chile poblano asado.</li>
+              <li>Cebolla caramelizada.</li>
+              <li>Cilantro fresco picado.</li>
+              <li>Salsa de tu elección, como salsa roja, salsa verde o salsa de aguacate.</li>
+              <li>Tortillas de maíz caliente.‎</li>
+            </ul>
+          </p>
+          <hr />
+
+          <h1>
+            <b>Taco de Chorizo</b> <span class="w3-tag w3-grey w3-round">New</span
+            ><span class="w3-right w3-tag w3-dark-grey w3-round">$28.000</span>
+          </h1>
+          <p class="w3-text-grey">
+            <div class="imga">
+              <img src="https://i.imgur.com/7HfeXJF.jpeg" alt="">
+            </div>
+            <ul>
+              <li>Chorizo picado.</li>
+              <li>Cebolla blanca.</li>
+              <li>Cilantro fresco picado.</li>
+              <li>Salsa de tu elección, como salsa roja, salsa verde o salsa de aguacate.</li>
+              <li>Tortillas de maíz caliente.</li>
+            </ul>
+          </p>
+        </div>
+
+        <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+          <h1>
+            <b>Quesadilla de queso</b> <span class="w3-tag w3-grey w3-round">Popular</span>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$20.000</span>
+          </h1>
+          <p class="w3-text-grey">
+            <div class="imga">
+              <img src="https://i.imgur.com/G7yZ5YB.jpeg" alt="">
+            </div>
+            <ul>
+              <li>Tortillas de maíz.</li>
+              <li>Queso Oaxaca rallado.</li>
+              <li>Crema agría.</li>
+              <li>Una capa de mantequilla.</li>
+            </ul>
+          </p>
+          <hr />
+
+          <h1>
+            <b>Quesadilla de pollo</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$25.000</span>
+          </h1>
+          <p class="w3-text-grey">
+            <div class="imga">
+              <img src="https://i.imgur.com/G7yZ5YB.jpeg" alt="">
+            </div>
+            <ul>
+              <li>Tortillas de maíz.</li>
+              <li>Pollo desmechado.</li>
+              <li>Queso Oaxaca rallado.</li>
+              <li>Crema agría.</li>
+              <li>Una capa de mantequilla.</li>
+            </ul>
+          </p>
+          <hr />
+
+          <h1>
+            <b>Quesadilla de champiñones</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$25.000</span>
+          </h1>
+          <p class="w3-text-grey">
+            <div class="imga">
+              <img src="https://i.imgur.com/G7yZ5YB.jpeg" alt="">
+            </div>
+            <ul>
+              <li>Tortillas de maíz.</li>
+              <li>Champiñones en salsa.</li>
+              <li>Queso Oaxaca rallado.</li>
+              <li>Crema agría.</li>
+              <li>Una capa de mantequilla.</li>
+            </ul>
+          </p>
+          <hr />
+
+        <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+          <h1>
+            <b>Today's Soup</b>
+            <span class="w3-tag w3-grey w3-round">Seasonal</span
+            ><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span>
+          </h1>
+          <p class="w3-text-grey">Ask the waiter</p>
+          <hr />
+
+          <h1>
+            <b>Bruschetta</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span>
+          </h1>
+          <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+          <hr />
+
+          <h1>
+            <b>Garlic bread</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span>
+          </h1>
+          <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+          <hr />
+
+          <h1>
+            <b>Tomozzarella</b>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span>
+          </h1>
+          <p class="w3-text-grey">Tomatoes and mozzarella</p>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <!-- About Container -->
+    <div
+      class="w3-container w3-padding-64 w3-red w3-xlarge"
+      id="about"
+    >
+      <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom: 64px">Sobre Nosotros</h1>
+        <p>
+          Bienvenido a Savage Tacos, donde la pasión por la auténtica cocina mexicana se une a una hospitalidad excepcional para ofrecerte una experiencia gastronómica inolvidable. Desde nuestros humildes comienzos hasta convertirnos en un destino emblemático, mantenemos firmemente nuestros valores de calidad, autenticidad y servicio excepcional. Fundado en 2024, Savage Tacos es un tributo a la rica diversidad culinaria de México, donde cada visita es una oportunidad para compartir nuestra pasión por la cocina mexicana y crear recuerdos duraderos con amigos, familiares y seres queridos. Te invitamos a unirte a nosotros en Savage Tacos y descubrir por qué somos mucho más que un restaurante; somos un destino para los amantes de la buena comida, la buena compañía y la auténtica hospitalidad mexicana.
+        </p>
+        <p>
+          <strong>The Chef?</strong> Mr. Taco en persona<img
+            src="https://static.vecteezy.com/system/resources/previews/000/638/340/original/vector-mexican-chef-holding-plate-with-tacos.jpg"
+            style="width: 150px"
+            class="w3-circle w3-right"
+            alt="Chef"
+          />
+        </p>
+        <p>Estamos orgullosos de nuestros interiores.</p>
+        <img
+          src="https://lh3.googleusercontent.com/proxy/EcNa-bl3F-RbRC1Xl4cKR7qDo4gMMm6rsu3reI1kUG5C9NqdFnlSzBgdtt6BtEL7VoitNaQm6HN4RJULsisJ5eEKr3tDQ5LN0NfEdP5fS6CLew"
+          style="width: 100%"
+          class="w3-margin-top w3-margin-bottom"
+          alt="Restaurant"
+        />
+        <h1><b>Horario de apertura</b></h1>
+
+        <div class="w3-row">
+          <div class="w3-col s6">
+            <p>Lunes y martes CERRADO</p>
+            <p>Miércoles 10.00 - 24.00</p>
+            <p>Jueves 10:00 - 24:00</p>
+          </div>
+          <div class="w3-col s6">
+            <p>Viernes 10:00 - 12:00</p>
+            <p>Sábado 10:00 - 23:00</p>
+            <p>Domingo Cerrado</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image of location/map -->
+    <img
+      src="https://www.w3schools.com/w3images/map.jpg"
+      class="w3-image w3-greyscale"
+      style="width: 100%"
+      id="myMap"
+    />
+
+    <!-- Contact -->
+    <div
+      class="w3-container w3-padding-64 w3-green w3-xlarge"
+    >
+      <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom: 64px">Contáctanos</h1>
+        <p>
+          Encuéntrenos en alguna dirección en algún lugar o llámenos al +57 317 6385691
+        </p>
+        <p>
+          <span class="w3-tag">PARA SU INFORMACIÓN!</span> Ofrecemos un servicio completo de catering para cualquier evento, grande o pequeño. Comprendemos sus necesidades y prepararemos la comida para satisfacer los criterios más exigentes, tanto de aspecto como de sabor.
+        </p>
+        <p class="w3-xxlarge">
+          <strong>Reserve</strong> mesa, pregunte por el especial de hoy o envíenos un mensaje:
+        </p>
+        <form action="/action_page.php" target="_blank">
+          <p>
+            <input
+              class="w3-input w3-padding-16 w3-border"
+              type="text"
+              placeholder="Nombre"
+              required
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16 w3-border"
+              type="number"
+              placeholder="Cuántas personas?"
+              required
+              name="People"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16 w3-border"
+              type="datetime-local"
+              placeholder="Date and time"
+              required
+              name="date"
+              value="2020-11-16T20:00"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16 w3-border"
+              type="text"
+              placeholder="Mensaje \ Requisitos especiales"
+              required
+              name="Message"
+            />
+          </p>
+          <p>
+            <button class="w3-button w3-light-grey w3-block" type="submit">
+              ENVIAR MENSAJE
+            </button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+      <p>2024 todos lo derechos reservados.</p>
+    </footer>
+
+    <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName('menu');
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = 'none';
+        }
+        tablinks = document.getElementsByClassName('tablink');
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(' w3-red', '');
+        }
+        document.getElementById(menuName).style.display = 'block';
+        evt.currentTarget.firstElementChild.className += ' w3-red';
+      }
+      document.getElementById('myLink').click();
+    </script>
+  </body>
+</html>
