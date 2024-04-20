@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SAVAGE TACOS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Amatic+SC"
+    />
+    <link rel="stylesheet" href="styles.css" class="css" />
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-hide-small">
+      <div
+        class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off"
+        id="myNavbar"
+      >
+        <a href="/index.html" class="w3-bar-item w3-button">INICIO</a>
+        <a href="/index.html#menu" class="w3-bar-item w3-button">MENU</a>
+        <a href="/index.html#about" class="w3-bar-item w3-button">Sobre nosotros</a>
+        <a href="/index.html#myMap" class="w3-bar-item w3-button">Contáctanos</a>
+      </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+      <div class="w3-display-bottomleft w3-padding">
+        <span class="w3-tag w3-xlarge">Abierto de 10.00 a 12.00 horas</span>
+      </div>
+      <div class="w3-display-middle w3-center">
+        <span class="w3-text-black w3-hide-small" style="font-size: 100px"
+          ><br />SAVAGE TACOS</span
+        >
+        <span
+          class="w3-text-white w3-hide-large w3-hide-medium"
+          style="font-size: 60px"
+          ><b><br />TACOS</b></span
+        >
+        <p>
+          <a href="/index.html#menu" class="w3-button w3-xxlarge w3-black">Ver menú</a>
+        </p>
+      </div>
+    </header>
+
+    <div class="w3-container w3-padding-64 w3-black w3-xlarge">
+        
+    </div>
+
+
+    <!-- Contact -->
+    <div
+      class="w3-container w3-padding-64 w3-green w3-xlarge"
+    >
+      <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom: 64px">Contáctanos</h1>
+        <p>
+          Encuéntrenos en alguna dirección en algún lugar o llámenos al +57 317 6385691
+        </p>
+        <p>
+          <span class="w3-tag">PARA SU INFORMACIÓN!</span> Ofrecemos un servicio completo de catering para cualquier evento, grande o pequeño. Comprendemos sus necesidades y prepararemos la comida para satisfacer los criterios más exigentes, tanto de aspecto como de sabor.
+        </p>
+        <p class="w3-xxlarge">
+          <strong>Reserve</strong> mesa, pregunte por el especial de hoy o envíenos un mensaje:
+        </p>
+        <form action="/action_page.php" target="_blank">
+          <p>
+            <input
+              class="w3-input w3-padding-16 w3-border"
+              type="text"
+              placeholder="Nombre"
+              required
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16 w3-border"
+              type="number"
+              placeholder="Cuántas personas?"
+              required
+              name="People"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16 w3-border"
+              type="datetime-local"
+              placeholder="Date and time"
+              required
+              name="date"
+              value="2020-11-16T20:00"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16 w3-border"
+              type="text"
+              placeholder="Mensaje \ Requisitos especiales"
+              required
+              name="Message"
+            />
+          </p>
+          <p>
+            <button class="w3-button w3-light-grey w3-block" type="submit">
+              ENVIAR MENSAJE
+            </button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+      <p>2024 todos lo derechos reservados.</p>
+    </footer>
+
+    <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName('menu');
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = 'none';
+        }
+        tablinks = document.getElementsByClassName('tablink');
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(' w3-red', '');
+        }
+        document.getElementById(menuName).style.display = 'block';
+        evt.currentTarget.firstElementChild.className += ' w3-red';
+      }
+      document.getElementById('myLink').click();
+    </script>
+  </body>
+</html>
